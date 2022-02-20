@@ -12,7 +12,7 @@ date_format:    "%A, %B %-d, %Y"
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }}</title>
-    <meta name="Earth 2150 Levels (Maps) Gallery" content="">
+    <meta name="Earth 2150: Levels (Maps) Gallery" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -20,6 +20,7 @@ date_format:    "%A, %B %-d, %Y"
 <ul class="ins-imgs">
 
     {% assign imgs = (site.static_files | sort: page.sort_by) %}
+    {% for img in imgs reversed %}
     {% if img.path contains page.image_folder %}
     {% assign img_name = img.path | remove: page.image_folder | split: '.' | first %}
     {% assign img_date = img.modified_time | date: page.date_format %}
