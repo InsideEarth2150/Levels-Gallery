@@ -12,7 +12,7 @@ ul.ins-imgs {
     padding: 0;
 }
 
-ul.ins-imgs3 {
+ul.ins-imgs2 {
     list-style-type: none;
     padding: 0;
 }
