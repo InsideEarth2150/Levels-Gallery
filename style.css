@@ -13,6 +13,7 @@ ul.ins-imgs {
 }
 
 ul.ins-imgs2 {
+    list-style-type: none;
     float: left;
     padding: 0;
 }
