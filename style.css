@@ -12,6 +12,11 @@ ul.ins-imgs {
     padding: 0;
 }
 
+ul.ins-imgs2 {
+    float: left;
+    padding: 0;
+}
+
 li.ins-imgs-li {
     text-align: center;
     padding-top: 20px;
